@@ -51,7 +51,7 @@ function crazyDiff(n1) {
     return (n1 - 19) * 3;
   }
 }
-let difference = crazyDiff(20, 19);
+let difference = crazyDiff(20);
 console.log("difference of numbers ", difference);
 
 /* EXERCISE 4
@@ -157,13 +157,14 @@ console.log("EXERCISE 10 \n");
 function giveMeRandom(n) {
   let numbers = [];
   for (i = 0; i < n; i++) {
-    numbers.push(Math.floor(Math.random() * 10));
+    numbers.push(Math.floor(Math.random() * 11));
   }
   return numbers;
 }
 
-let randomNumber = giveMeRandom(12);
+let randomNumber = giveMeRandom(5);
 console.log(randomNumber, "\n");
+export { randomNumber };
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */
